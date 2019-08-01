@@ -1,4 +1,8 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Playing Around With Gatsby',
+    description: 'Whatever description',
+  },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-emotion',
