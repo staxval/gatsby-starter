@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Global, css } from "@emotion/core";
-import Helmet from "react-helmet";
-import "normalize.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Global, css } from '@emotion/core';
+import Helmet from 'react-helmet';
+import 'normalize.css';
 
-import Container from "./Container";
-import Header from "./Header";
-import useSiteMetadata from "../hooks/useSiteMetadata";
+import Container from './Container';
+import Header from './Header';
+import useSiteMetadata from '../hooks/useSiteMetadata';
 
 const Layout = ({ children }) => {
   const { description, title } = useSiteMetadata();
@@ -16,8 +16,8 @@ const Layout = ({ children }) => {
         styles={css`
           * {
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-              Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+              Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
               sans-serif;
           }
           html {
@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
 };
 
 Layout.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node).isRequired
+  children: PropTypes.arrayOf(PropTypes.node).isRequired,
 };
 
 export default Layout;

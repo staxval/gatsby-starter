@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { css } from "@emotion/core";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { css } from '@emotion/core';
 
 const Container = ({ children, width }) => (
   <div
@@ -20,11 +20,11 @@ const Container = ({ children, width }) => (
 
 Container.propTypes = {
   width: PropTypes.string,
-  children: PropTypes.arrayOf(PropTypes.node).isRequired
+  children: PropTypes.arrayOf(PropTypes.node).isRequired,
 };
 
 Container.defaultProps = {
-  width: "750"
+  width: '750',
 };
 
 export default Container;

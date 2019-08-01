@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link } from "gatsby";
-import { css } from "@emotion/core";
-import styled from "@emotion/styled";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
+import { css } from '@emotion/core';
+import styled from '@emotion/styled';
 
 const PostTitle = styled(Link)`
   font-size: 2rem;
@@ -38,8 +38,8 @@ PostPreview.propTypes = {
   post: PropTypes.shape({
     slug: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired
-  }).isRequired
+    author: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default PostPreview;

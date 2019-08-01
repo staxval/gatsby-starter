@@ -1,9 +1,9 @@
-import React from "react";
-import "normalize.css";
+import React from 'react';
+import 'normalize.css';
 
-import Layout from "../components/Layout";
-import PostPreview from "../components/PostPreview";
-import usePosts from "../hooks/usePosts";
+import Layout from '../components/Layout';
+import PostPreview from '../components/PostPreview';
+import usePosts from '../hooks/usePosts';
 
 export default () => {
   const posts = usePosts();

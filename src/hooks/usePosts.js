@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from 'gatsby';
 
 const usePosts = () => {
   const data = useStaticQuery(graphql`
@@ -19,8 +19,8 @@ const usePosts = () => {
   return data.allFile.nodes.map(
     ({
       childMdx: {
-        frontmatter: { author, slug, title }
-      }
+        frontmatter: { author, slug, title },
+      },
     }) => ({ author, slug, title })
   );
 };

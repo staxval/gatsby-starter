@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "gatsby";
-import styled from "@emotion/styled";
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from '@emotion/styled';
 
-import Container from "./Container";
+import Container from './Container';
 
 const Wrapper = styled.header`
   margin: 0 0 4rem;

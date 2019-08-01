@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { css } from "@emotion/core";
-import { graphql } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { css } from '@emotion/core';
+import { graphql } from 'gatsby';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 
-import Layout from "../components/Layout";
+import Layout from '../components/Layout';
 
 export const query = graphql`
   query MyQuery($slug: String!) {
@@ -22,9 +22,9 @@ export const Post = ({
   data: {
     mdx: {
       frontmatter: { title, author },
-      body
-    }
-  }
+      body,
+    },
+  },
 }) => {
   return (
     <Layout>
@@ -57,11 +57,11 @@ Post.propTypes = {
     mdx: PropTypes.shape({
       frontmatter: PropTypes.shape({
         title: PropTypes.string.isRequired,
-        author: PropTypes.string.isRequired
+        author: PropTypes.string.isRequired,
       }),
-      body: PropTypes.string.isRequired
-    })
-  }).isRequired
+      body: PropTypes.string.isRequired,
+    }),
+  }).isRequired,
 };
 
 export default Post;
