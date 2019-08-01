@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 import "normalize.css";
 
 import Container from "./Container";
+import Header from "./Header";
 
 const Layout = ({ children }) => (
   <>
@@ -33,6 +34,7 @@ const Layout = ({ children }) => (
       <title>Gatsby sandbox</title>
       <meta name="description" content="Playing around with gatsby" />
     </Helmet>
+    <Header />
     <main>
       <Container>{children}</Container>
     </main>
