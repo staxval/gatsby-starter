@@ -4,6 +4,8 @@ import { Global, css } from "@emotion/core";
 import Helmet from "react-helmet";
 import "normalize.css";
 
+import Container from "./Container";
+
 const Layout = ({ children }) => (
   <>
     <Global
@@ -31,7 +33,9 @@ const Layout = ({ children }) => (
       <title>Gatsby sandbox</title>
       <meta name="description" content="Playing around with gatsby" />
     </Helmet>
-    <main>{children}</main>
+    <main>
+      <Container>{children}</Container>
+    </main>
   </>
 );
 
