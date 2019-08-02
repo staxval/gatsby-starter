@@ -9,16 +9,27 @@ const usePosts = () => {
             author
             slug
             title
+            imagePreview {
+              sharp: childImageSharp {
+                fluid(maxWidth: 150, maxHeight: 150, cropFocus: CENTER) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
           }
         }
       }
     }
   `);
-  return data.allMdx.nodes.map(({ frontmatter: { author, slug, title } }) => ({
-    author,
-    slug,
-    title,
-  }));
+
+  return data.allMdx.nodes.map(
+    ({ frontmatter: { author, slug, title, imagePreview } }) => ({
+      author,
+      slug,
+      title,
+      imagePreview,
+    })
+  );
 };
 
 export default usePosts;
