@@ -27,5 +27,12 @@ module.exports = {
         path: 'posts',
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: 'images',
+      },
+    },
   ],
 };
