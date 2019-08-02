@@ -6,12 +6,18 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-emotion',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
         defaultLayouts: {
           default: require.resolve('./src/components/Layout.jsx'),
         },
+        gatsbyRemarkPlugins: [
+          { resolve: 'gatsby-remark-images', options: { maxWidth: 750 } },
+        ],
+        plugins: [{ resolve: 'gatsby-remark-images' }], // not supposed to be here
       },
     },
     {
