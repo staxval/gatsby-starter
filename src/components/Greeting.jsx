@@ -21,7 +21,7 @@ const TextContainer = styled(Container)`
 const Title = styled.div`
   font-size: 64px;
   font-weight: 700;
-  color: #853735;
+  color: #59201f;
 `;
 
 const Greeting = () => {
